@@ -2,7 +2,9 @@ import path from "path";
 import fs from "node:fs"
 import { remark } from "remark";
 import remarkHtml from "remark-html";
+import remarkGfm from "remark-gfm";
 import Stack from "@/components/Stack";
+import styles from "./page.module.scss";
 
 export const metadata = {
     formatDetection: {
@@ -34,14 +36,14 @@ export default async function BlogPage({
     const { blogslug } = await params;
     const fullPath = path.join("./public/blog/", blogslug + ".md");
     const fileContents = fs.readFileSync(fullPath, "utf8");
-    const processesContent = await remark().use(remarkHtml).process(fileContents.toString());
+    const processesContent = await remark().use(remarkGfm).use(remarkHtml).process(fileContents.toString());
     const contentHtml = processesContent.toString();
 
     return (
         <main>
             <Stack>
                 <article>
-                    <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+                    <div className={styles.markdown} dangerouslySetInnerHTML={{ __html: contentHtml }} />
                 </article>
             </Stack>
         </main>

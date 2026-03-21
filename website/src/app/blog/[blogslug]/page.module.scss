@@ -1,0 +1,81 @@
+.markdown {
+    color: var(--text-color);
+
+    p {
+        margin: 1rem 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 1.4rem;
+        margin-bottom: 0.75rem;
+    }
+
+    ul,
+    ol {
+        margin: 1rem 0;
+        padding-left: 1.35rem;
+    }
+
+    pre {
+        margin: 1.2rem 0;
+        padding: 1rem;
+        border: 1px solid rgba(214, 216, 223, 0.16);
+        border-radius: 14px;
+        background: rgba(0, 0, 0, 0.32);
+        overflow-x: auto;
+        line-height: 1.55;
+    }
+
+    code {
+        font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+        font-size: 0.9em;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(214, 216, 223, 0.2);
+        border-radius: 6px;
+        padding: 0.1rem 0.35rem;
+    }
+
+    pre code {
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        font-size: 0.95em;
+    }
+
+    table {
+        width: 100%;
+        margin: 1.25rem 0;
+        border-collapse: collapse;
+        border: 1px solid rgba(214, 216, 223, 0.25);
+        border-radius: 10px;
+        overflow: hidden;
+        display: block;
+        overflow-x: auto;
+    }
+
+    thead {
+        background: rgba(255, 255, 255, 0.04);
+    }
+
+    th,
+    td {
+        border: 1px solid rgba(214, 216, 223, 0.2);
+        text-align: left;
+        padding: 0.6rem 0.75rem;
+        vertical-align: top;
+    }
+
+    blockquote {
+        margin: 1.2rem 0;
+        padding: 0.4rem 1rem;
+        border-left: 3px solid var(--accent-color);
+        background: rgba(var(--accent-color-rgb), 0.11);
+        color: var(--text-color);
+    }
+}
