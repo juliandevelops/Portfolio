@@ -5,19 +5,18 @@ import styles from "./page.module.scss";
 export default function Home() {
   return (
     <main className={styles.home}>
-      <section className={`${styles.hero} ${styles.reveal}`}>
+      <section className={styles.hero}>
         <div className={styles.introduction}>
           <div className={styles.heroImage}>
             <Image
               src="/me.jpg"
               alt="A Portrait of myself"
-              width={160}
-              height={160}
+              width={140}
+              height={140}
               priority
             />
           </div>
           <div className={styles.heroText}>
-            <span className={styles.eyebrow}>Cyber Security</span>
             <h1>Julian Schumacher</h1>
             <p className={styles.heroSubtitle}>
               I build privacy-first software and explore security topics with a clear, minimal focus.
@@ -44,16 +43,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.reveal} ${styles.delay1}`}>
+      <section className={styles.section}>
         <h2>About me</h2>
         <p>
           Hi, great you&rsquo;re here. I&rsquo;m Julian Schumacher, a passionate Cyber Security student at DHBW Stuttgart.
           I love exploring the world of technology and implementing my knowledge through various projects.
-          I&rsquo;m especially interestend in cyber security topics and am eager to improve my skills in this field.
+          I&rsquo;m especially interested in cyber security topics and am eager to improve my skills in this field.
         </p>
       </section>
 
-      <section className={`${styles.section} ${styles.reveal} ${styles.delay2}`}>
+      <section className={styles.section}>
         <h2>What I do</h2>
         <p>
           My passion is developing mobile and desktop applications with a focus on privacy and security.
@@ -63,7 +62,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className={`${styles.section} ${styles.reveal} ${styles.delay3}`}>
+      <section className={styles.section}>
         <h2>What defines me and my work</h2>
         <p>
           At the focus of my work are privacy, security, and user experience.

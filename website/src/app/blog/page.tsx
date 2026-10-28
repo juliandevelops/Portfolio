@@ -76,7 +76,7 @@ export default async function Blog() {
                 <h1>Blog</h1>
                 <p>Read more about my work, projects, and thoughts on software development.</p>
             </Stack>
-            <PageSection delay="delay1">
+            <PageSection>
                 <h2>Entries</h2>
                 {blogEntryFiles.length === 0 ? (
                     <p>No blog entries found.</p>
@@ -95,7 +95,7 @@ export default async function Blog() {
                 }
                 <p>Stay tuned for updates!</p>
             </PageSection>
-            <PageSection delay="delay2">
+            <PageSection>
                 <h2>Learnings</h2>
                 <p>
                     For an explicit list of learnings related to a multitude of different technologies and frameworks,

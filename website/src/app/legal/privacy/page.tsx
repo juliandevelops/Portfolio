@@ -58,7 +58,7 @@ export default function Privacy() {
                     </li>
                 </ul>
             </Stack>
-            <PageSection delay="delay1">
+            <PageSection>
                 <h1>Apps</h1>
                 <h2>General</h2>
                 <p>
@@ -69,7 +69,7 @@ export default function Privacy() {
                     If the Data are sensitive, they are encrypted.
                 </p>
             </PageSection>
-            <PageSection delay="delay2">
+            <PageSection>
                 <h2>Flutter Specific</h2>
                 <p>
                     For some of my Apps i use <Link href="https://dart.dev" target="_blank">Googles Language Dart</Link> and the corresponding <Link
@@ -90,7 +90,7 @@ export default function Privacy() {
                         here</Link>.
                 </p>
             </PageSection>
-            <PageSection delay="delay3">
+            <PageSection>
                 <h2>Swift Specific</h2>
                 <p>
                     My Swift and SwiftUI Apps - most of my more recent Apps,

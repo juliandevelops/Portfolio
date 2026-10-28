@@ -20,14 +20,14 @@ export default function Projects() {
 
     return (
         <main className={styles.projectsPage}>
-            <div className={`${styles.hero} fadeIn`}>
+            <div className={styles.hero}>
                 <h1>Projects</h1>
                 <p>Explore curated work across security, privacy, and product engineering.</p>
                 <p>Note: My current focus is on more complex projects coming soon, so most current projects are put on hold for a while.</p>
             </div>
             {/* Type selector */}
             <h2>Type</h2>
-            <div className={`${styles.typeSelector} fadeIn delay1`}>
+            <div className={styles.typeSelector}>
                 <ul>
                     <li key="all">
                         <button

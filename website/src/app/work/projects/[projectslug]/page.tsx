@@ -55,7 +55,7 @@ export default async function ProjectPage({
                     <h1>{project.name}</h1>
                     <p>{project.description}</p>
                 </Stack>
-                <PageSection delay="delay1">
+                <PageSection>
                     <h2>Screenshots</h2>
                     {project.screenshots.length === 0 ? (
                         <p>No screenshots available yet.</p>
@@ -63,7 +63,7 @@ export default async function ProjectPage({
                         <ProjectCarousel props={props} projectName={project.identifier} />
                     )}
                 </PageSection>
-                <PageSection delay="delay2">
+                <PageSection>
                     <h2>General</h2>
                     <p>{project.activeSupport ? "Active support" : "Inactive support"}</p>
                     <p>{project.firstVersionReleased ? "Published" : "Still in development"}</p>
@@ -108,7 +108,7 @@ export default async function ProjectPage({
                         </ul>
                     </div>
                 </PageSection>
-                <PageSection delay="delay2">
+                <PageSection>
                     <h2>Features</h2>
                     <ul>
                         {project.features.map((feature, index) => (
@@ -116,7 +116,7 @@ export default async function ProjectPage({
                         ))}
                     </ul>
                 </PageSection>
-                <PageSection delay="delay3">
+                <PageSection>
                     <h2>Technologies</h2>
                     <p>Technologies used in development of this project</p>
                     <div className="stack">
@@ -144,7 +144,7 @@ export default async function ProjectPage({
                         }
                     </div>
                 </PageSection>
-                <PageSection delay="delay3">
+                <PageSection>
                     <h2>Connection</h2>
                     <ul>
                         {Array.from(project.connection.getActive().entries()).map(([key, value]) => (

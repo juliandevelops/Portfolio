@@ -44,24 +44,24 @@ export default function Contact() {
             <Stack>
                 <h1>Contact</h1>
                 <p>
-                    In case of any questions, requests or other converns, please don&rsquo;t hesitate to reach out.
-                    You can pick you&rsquo;r prefered method of contact below.
+                    In case of any questions, requests or other concerns, please don&rsquo;t hesitate to reach out.
+                    You can pick your preferred method of contact below.
                     Most of the time, a simple email will get you the fastest response.
                     Please include as many details as possible regarding your request for me to help you best.
                 </p>
             </Stack>
 
             {/* Email contact */}
-            <PageSection className={styles.contactSection} delay="delay1">
+            <PageSection className={styles.contactSection}>
                 <h2>Preferred</h2>
                 <p>Email: <Link href="mailto:contact@julianschumacher.dev?subject=Contact request">contact@julianschumacher.dev</Link></p>
             </PageSection>
 
             {/* Other Contacts */}
-            <h2 className="fadeIn delay1">Others</h2>
+            <h2>Others</h2>
 
             {/* Work contact */}
-            <PageSection className={styles.contactSection} delay="delay2">
+            <PageSection className={styles.contactSection}>
                 <h3>Work</h3>
                 <p className={styles.socialLink}>
                     <Image
@@ -76,7 +76,7 @@ export default function Contact() {
             </PageSection>
 
             {/* Social Links */}
-            <PageSection className={styles.contactSection} delay="delay2">
+            <PageSection className={styles.contactSection}>
                 <h3>Socials</h3>
                 <p className={styles.socialLink}>
                     <Image
@@ -119,13 +119,13 @@ export default function Contact() {
             </PageSection>
 
             {/* Support section */}
-            <PageSection className={styles.contactSection} delay="delay3">
+            <PageSection className={styles.contactSection}>
                 <h3>Support</h3>
                 <p>For support requests please refer to the <Link href="/support">dedicated support page.</Link></p>
             </PageSection>
 
             {/* Other projects */}
-            <PageSection className={styles.contactSection} delay="delay3">
+            <PageSection className={styles.contactSection}>
                 <h3>Other projects</h3>
                 <div className={styles.storeLinks}>
                     <p className={styles.storeLink}>

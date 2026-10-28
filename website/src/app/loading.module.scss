@@ -17,7 +17,7 @@
 .skeletonAvatar {
   width: 80px;
   height: 80px;
-  border-radius: 20px;
+  border-radius: 12px;
 }
 
 .skeletonText {
@@ -29,13 +29,13 @@
 
 .skeletonLine {
   height: 14px;
-  border-radius: 999px;
+  border-radius: 4px;
 }
 
 .skeletonLineShort {
   height: 14px;
   width: 60%;
-  border-radius: 999px;
+  border-radius: 4px;
 }
 
 .skeletonCards {
@@ -50,15 +50,15 @@
 
 .skeletonCard {
   height: 120px;
-  border-radius: 18px;
+  border-radius: 10px;
 }
 
 .skeleton {
   background: linear-gradient(
     110deg,
-    rgba(214, 216, 223, 0.08) 8%,
-    rgba(214, 216, 223, 0.16) 18%,
-    rgba(214, 216, 223, 0.08) 33%
+    rgba(238, 240, 243, 0.05) 8%,
+    rgba(238, 240, 243, 0.12) 18%,
+    rgba(238, 240, 243, 0.05) 33%
   );
   background-size: 200% 100%;
   animation: shimmer 1.4s ease infinite;

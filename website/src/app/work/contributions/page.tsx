@@ -10,7 +10,7 @@ export default function Contributions() {
                     Here you can find information about my contributions to various projects and open source initiatives.
                 </p>
             </Stack>
-            <PageSection delay="delay1">
+            <PageSection>
                 <h2>Open Source Projects</h2>
                 <p>Currently no completed contributions to third-party open source projects.</p>
             </PageSection>

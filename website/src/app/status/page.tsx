@@ -42,7 +42,7 @@ export default function StatusPage() {
                     The most recent state of development can be found on <Link href="https://github.com/juliandevelops/website" target="_blank">GitHub</Link>.
                 </p>
             </Stack>
-            <PageSection delay="delay1">
+            <PageSection>
                 <h2>System Status</h2>
                 <p>
                     Currently no system is self-hosted, so no status information is available.

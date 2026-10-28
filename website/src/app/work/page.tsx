@@ -49,15 +49,15 @@ export default function Projects() {
                     or repositories.
                 </p>
             </Stack>
-            <PageSection delay="delay1">
+            <PageSection>
                 <h2>Projects</h2>
                 <p>You can find my projects on the corresponding page <Link href="/work/projects">here</Link>.</p>
             </PageSection>
-            <PageSection delay="delay2">
+            <PageSection>
                 <h2>Contributions</h2>
                 <p>Find out about my contributions to various projects and open source initiatives <Link href="/work/contributions">here</Link>.</p>
             </PageSection>
-            <PageSection delay="delay3">
+            <PageSection>
                 <h2>Other</h2>
                 <p>Some projects and ideas which are currently not listed on the projects page can be found here.</p>
                 <p>Stay tuned, more coming soon!</p>

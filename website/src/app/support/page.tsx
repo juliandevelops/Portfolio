@@ -43,7 +43,7 @@ export default function Support() {
                 <p>If you need support, you can reach the support via <Link
                     href="mailto:support@julianschumacher.dev?subject=Support Request">E-mail</Link>.</p>
             </Stack>
-            <PageSection delay="delay1">
+            <PageSection>
                 <p>For information regarding current issues, problems and projects, please first refer to <Link
                     href="https://github.com/juliandevelops" target="_blank">Github</Link>.</p>
                 <p>If you search for further information regarding a specific project, please refer to that project&rsquo;s

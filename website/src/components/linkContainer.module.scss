@@ -11,20 +11,17 @@
 }
 
 .linkContainer {
-    padding: 1.5rem;
+    padding: 1.75rem;
     margin: 0;
     cursor: pointer;
-    background: rgba(15, 17, 21, 0.55);
-    border-radius: 20px;
-    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(var(--accent-color-rgb), 0.3);
-    transition: transform 0.25s ease, border-color 0.25s ease;
+    background: var(--surface-color);
+    border-radius: 12px;
+    border: 1px solid var(--surface-border);
+    box-shadow: var(--surface-shadow);
+    transition: border-color 0.2s ease;
 
     &:hover {
-        transform: translateY(-4px);
-        border-color: rgba(var(--accent-color-rgb), 0.6);
+        border-color: var(--accent-color);
     }
 }
 
