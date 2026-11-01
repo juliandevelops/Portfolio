@@ -15,7 +15,7 @@ export default function Header() {
     <nav className={styles.nav}>
       <div className={styles.navInner}>
         <Link href="/" className={styles.navBrand}>
-          Julian Schumacher
+          Julian Schumacher<span className={styles.brandDot}>.</span>
         </Link>
         <button
           className={styles.menuButton}
@@ -39,13 +39,7 @@ export default function Header() {
             <Link href="/blog" onClick={handleLinkClick}>Blog</Link>
           </li>
           <li>
-            <Link href="/legal/privacy/" onClick={handleLinkClick}>Privacy</Link>
-          </li>
-          <li>
             <Link href="/contact/" onClick={handleLinkClick}>Contact</Link>
-          </li>
-          <li>
-            <Link href="/support/" onClick={handleLinkClick}>Support</Link>
           </li>
         </ul>
       </div>

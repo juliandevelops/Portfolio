@@ -9,6 +9,13 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     scrollRestoration: true,
+  },
+  async redirects() {
+    return [
+      { source: "/work/projects", destination: "/work", permanent: true },
+      { source: "/work/contributions", destination: "/work", permanent: true },
+      { source: "/learnings", destination: "/blog?tag=learnings", permanent: true },
+    ];
   }
 };
 

@@ -1,8 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.scss";
+import getProjects from "@/data/mapping";
+import { featuredProjects, youtubeVideoId } from "@/data/content";
+import LinkContainer from "@/components/linkContainer";
 
 export default function Home() {
+  const allProjects = getProjects()[0] as { identifier: string; name: string; description: string }[];
+  const featured = featuredProjects
+    .map((id) => allProjects.find((p) => p.identifier === id))
+    .filter((p) => p !== undefined);
+
   return (
     <main className={styles.home}>
       <section className={styles.hero}>
@@ -42,6 +50,38 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className={styles.section}>
+        <h2>Selected work</h2>
+        <p>A few projects I am currently focused on. You can find all of them in the archive.</p>
+        <div className={styles.projectGrid}>
+          {featured.map((project) => (
+            <LinkContainer
+              key={project.identifier}
+              name={project.name}
+              description={project.description}
+              href={`/work/projects/${project.identifier}`}
+            />
+          ))}
+        </div>
+        <p>
+          <Link href="/work">Browse all projects</Link>
+        </p>
+      </section>
+
+      {youtubeVideoId && (
+        <section className={styles.section}>
+          <h2>Latest video</h2>
+          <div className={styles.videoWrapper}>
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${youtubeVideoId}`}
+              title="Latest YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </section>
+      )}
 
       <section className={styles.section}>
         <h2>About me</h2>

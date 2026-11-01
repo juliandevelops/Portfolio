@@ -1,0 +1,34 @@
+.tagFilter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.5rem 0 0;
+}
+
+.tag {
+    text-decoration: none;
+    border: 1px solid var(--surface-border);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-family: var(--font-heading), "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: var(--muted-text);
+    transition: border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+        border-color: var(--accent-color);
+        color: var(--headline-color);
+    }
+}
+
+.activeTag {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--headline-color);
+
+    &:hover {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        color: var(--headline-color);
+    }
+}

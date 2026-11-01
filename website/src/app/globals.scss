@@ -1,15 +1,16 @@
-@import "tailwindcss";
+@use "tailwindcss";
 
 :root {
   --background: #151416;
-  --text-color: #B4B7BD;
+  --text-color: #B9B5AF;
   --headline-color: #F5F5F2;
   --accent-color: #6E2B3A;
   --accent-color-rgb: 110, 43, 58;
-  --surface-color: #1B1A1D;
+  --accent-border: rgba(var(--accent-color-rgb), 0.32);
+  --surface-color: #1D1A1E;
   --surface-border: rgba(238, 240, 243, 0.13);
   --surface-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
-  --muted-text: rgba(202, 205, 210, 0.75);
+  --muted-text: rgba(201, 197, 192, 0.78);
   overscroll-behavior: default;
 }
 
@@ -28,7 +29,8 @@ body {
   font-size: 18px;
   background:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' opacity='0.04'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E") repeat,
-    radial-gradient(ellipse 90% 60% at 50% 0%, rgba(var(--accent-color-rgb), 0.09), transparent 65%),
+    radial-gradient(ellipse 90% 60% at 50% 0%, rgba(var(--accent-color-rgb), 0.13), transparent 65%),
+    radial-gradient(ellipse 70% 50% at 90% 100%, rgba(var(--accent-color-rgb), 0.07), transparent 70%),
     linear-gradient(180deg, #1A181B 0%, var(--background) 45%);
   background-attachment: fixed;
   min-height: 100vh;
@@ -93,11 +95,13 @@ h6 {
 
 a {
   text-decoration: underline;
+  text-decoration-color: rgba(var(--accent-color-rgb), 0.65);
   text-underline-offset: 3px;
   word-break: break-word;
 
   &:hover {
     color: var(--accent-color);
+    text-decoration-color: var(--accent-color);
   }
 
   &:active {
@@ -175,7 +179,7 @@ li {
 
 article {
   background: var(--surface-color);
-  border: 1px solid var(--surface-border);
+  border: 1px solid var(--accent-border);
   border-radius: 12px;
   padding: 2.25rem 2rem;
   box-shadow: var(--surface-shadow);
@@ -186,7 +190,7 @@ article {
   padding: 2rem 1.75rem;
   border-radius: 12px;
   background: var(--surface-color);
-  border: 1px solid var(--surface-border);
+  border: 1px solid var(--accent-border);
   box-shadow: var(--surface-shadow);
 }
 

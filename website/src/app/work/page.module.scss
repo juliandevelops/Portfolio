@@ -1,11 +1,19 @@
-.projectsPage {
+.workPage {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
 .hero {
-    padding: 0;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(var(--accent-color-rgb), 0.12), rgba(var(--accent-color-rgb), 0.04));
+    border: 1px solid var(--accent-border);
+    box-shadow: var(--surface-shadow);
+
+    @media (max-width: 640px) {
+        padding: 1.75rem 1.25rem;
+    }
 }
 
 .typeSelector {
@@ -68,4 +76,10 @@
     border-radius: 12px;
     border: 1px dashed var(--surface-border);
     color: var(--muted-text);
+}
+
+.contributions {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--surface-border);
 }
