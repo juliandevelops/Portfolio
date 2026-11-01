@@ -4,6 +4,7 @@ import styles from "./page.module.scss";
 import getProjects from "@/data/mapping";
 import { featuredProjects, youtubeVideoId } from "@/data/content";
 import LinkContainer from "@/components/linkContainer";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export default function Home() {
   const allProjects = getProjects()[0] as { identifier: string; name: string; description: string }[];
@@ -73,12 +74,7 @@ export default function Home() {
         <section className={styles.section}>
           <h2>Latest video</h2>
           <div className={styles.videoWrapper}>
-            <iframe
-              src={`https://www.youtube-nocookie.com/embed/${youtubeVideoId}`}
-              title="Latest YouTube video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            <YouTubeEmbed videoId={youtubeVideoId} title="Latest YouTube video" />
           </div>
         </section>
       )}

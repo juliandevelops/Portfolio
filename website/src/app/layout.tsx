@@ -5,6 +5,8 @@ import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "./header";
 import Footer from "./footer";
+import CookieBanner from "@/components/CookieBanner";
+import ConsentGate from "@/components/ConsentGate";
 
 const sourceSerif4 = Source_Serif_4({
   subsets: ["latin"],
@@ -109,8 +111,11 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
-        <SpeedInsights />
+        <ConsentGate>
+          <SpeedInsights />
+        </ConsentGate>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

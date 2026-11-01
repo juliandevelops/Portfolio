@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./footer.module.scss";
+import CookieSettingsButton from "@/components/CookieSettingsButton";
 
 export default function Footer() {
   return (
@@ -14,6 +15,8 @@ export default function Footer() {
           <Link href="/blog?tag=learnings">Learnings</Link>
           <Link href="/support">Support</Link>
           <Link href="/legal/privacy">Privacy Policy</Link>
+          <Link href="/legal/imprint">Imprint</Link>
+          <CookieSettingsButton />
           <Link href="mailto:support@juliandevelops.com?subject=Support Request [via Website]&body=[Support request triggered by website footer]">
             Support request
           </Link>
