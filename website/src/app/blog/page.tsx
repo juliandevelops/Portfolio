@@ -8,14 +8,14 @@ import { blogTags } from "@/data/content";
 import styles from "./page.module.scss";
 
 export const metadata = {
-    title: 'Julian Schumacher - Blog',
+    title: 'juliandevelops - Blog',
     description: 'Read my latest blog posts and updates',
     keywords: [
         "Developer Blog",
         "Programming Blog",
         "Blog",
         "Personal Blog",
-        "Julian Schumacher Blog",
+        "juliandevelops Blog",
         "Blog",
     ],
     formatDetection: {

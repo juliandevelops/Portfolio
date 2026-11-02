@@ -3,11 +3,11 @@ import PageSection from "@/components/PageSection";
 import Stack from "@/components/Stack";
 
 export const metadata = {
-    title: 'Julian Schumacher - Website Status',
-    description: 'Current status of the Julian Schumacher website',
+    title: 'juliandevelops - Website Status',
+    description: 'Current status of the juliandevelops website',
     keywords: [
         "Website Status",
-        "Julian Schumacher Website Status",
+        "juliandevelops Website Status",
         "Website Maintenance",
         "Website Updates",
         "Website Information",

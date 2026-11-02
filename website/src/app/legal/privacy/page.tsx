@@ -3,15 +3,15 @@ import PageSection from "@/components/PageSection";
 import Stack from "@/components/Stack";
 
 export const metadata = {
-    title: 'Julian Schumacher - Privacy Policy',
+    title: 'juliandevelops - Privacy Policy',
     description: 'Privacy policy of this website pursuant to Art. 13 GDPR',
     keywords: [
-        "Julian Schumacher Privacy",
+        "juliandevelops Privacy",
         "Privacy Policy",
         "Data Protection",
         "GDPR",
-        "Julian Schumacher Data Protection",
-        "Julian Schumacher Privacy Policy",
+        "juliandevelops Data Protection",
+        "juliandevelops Privacy Policy",
         "Legal",
         "Imprint",
     ],
@@ -152,7 +152,7 @@ export default function Privacy() {
             <PageSection>
                 <h2>7. Fonts</h2>
                 <p>
-                    The fonts used (Source Serif 4, IBM Plex Sans, IBM Plex Mono) are provided via
+                    The fonts used (IBM Plex Sans, JetBrains Mono) are provided via
                     Google Fonts but are downloaded at build time and served locally by this website.
                     At runtime, no connection to Google servers is established.
                 </p>
@@ -251,7 +251,7 @@ export default function Privacy() {
                     <Link href="https://pub.dev" target="_blank">pub.dev</Link>. The packages of a
                     specific project can be found in that project&rsquo;s GitHub repository, usually linked
                     in the store or the app itself. If you can&rsquo;t find the link, you can{" "}
-                    <Link href="https://github.com/Julessh05?tab=repositories" target="_blank">search here</Link>.
+                    <Link href="https://github.com/juliandevelops?tab=repositories" target="_blank">search here</Link>.
                 </p>
                 <h3>Swift / SwiftUI</h3>
                 <p>

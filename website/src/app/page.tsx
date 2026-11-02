@@ -5,6 +5,7 @@ import getProjects from "@/data/mapping";
 import { featuredProjects, youtubeVideoId } from "@/data/content";
 import LinkContainer from "@/components/linkContainer";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
+import Glyph from "@/components/Glyph";
 
 export default function Home() {
   const allProjects = getProjects()[0] as { identifier: string; name: string; description: string }[];
@@ -26,7 +27,11 @@ export default function Home() {
             />
           </div>
           <div className={styles.heroText}>
-            <h1>Julian Schumacher</h1>
+            <h1 className={styles.wordmark}>
+              <Glyph className={styles.wordmarkGlyph} variant="primary" />
+              juliandevelops
+            </h1>
+            <p className={styles.heroTagline}>security · code · ai</p>
             <p className={styles.heroSubtitle}>
               I build privacy-first software and explore security topics with a clear, minimal focus.
             </p>

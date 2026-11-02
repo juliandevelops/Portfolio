@@ -47,12 +47,12 @@
     .active {
         background-color: var(--accent-color);
         border-color: var(--accent-color);
-        color: var(--headline-color);
+        color: #141414;
 
         &:hover {
-            background-color: var(--accent-color);
-            border-color: var(--accent-color);
-            color: var(--headline-color);
+            background-color: var(--accent-hover);
+            border-color: var(--accent-hover);
+            color: #141414;
         }
     }
 }

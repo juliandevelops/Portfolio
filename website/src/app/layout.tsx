@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
+import { IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.scss";
 import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -8,34 +8,27 @@ import Footer from "./footer";
 import CookieBanner from "@/components/CookieBanner";
 import ConsentGate from "@/components/ConsentGate";
 
-const sourceSerif4 = Source_Serif_4({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-  style: ["normal", "italic"],
-  variable: "--font-primary",
-});
-
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-heading",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "700"],
   variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
-  title: "Julian Schumacher",
-  description: "My personal Website",
+  title: "juliandevelops — security · code · ai",
+  description: "security · code · ai — privacy-first software, projects and writing by juliandevelops.",
   publisher: "Julian Schumacher",
-  applicationName: "Next",
+  applicationName: "juliandevelops",
   generator: "Next.js",
   keywords: [
+    "juliandevelops",
     "Personal Website",
-    "Julian Schumacher",
     "App Development",
     "App Developer",
     "Web Development",
@@ -52,7 +45,7 @@ export const metadata: Metadata = {
     "iOS Development",
     "Android Development",
   ],
-  authors: { name: "Julian Schumacher", url: "https://julianschumacher.dev" },
+  authors: { name: "Julian Schumacher", url: "https://juliandevelops.com" },
   creator: "Julian Schumacher",
   formatDetection: {
     email: true,
@@ -75,16 +68,16 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://juliandevelops.com"),
   twitter: {
     card: "summary_large_image",
-    title: "Julian Schumacher",
-    description: "My personal Website",
-    creator: "@julian_develops",
+    title: "juliandevelops — security · code · ai",
+    description: "security · code · ai — privacy-first software, projects and writing by juliandevelops.",
+    creator: "@juliandevelops",
     images: [],
   },
   openGraph: {
-    title: "Julian Schumacher",
-    description: "My Website",
+    title: "juliandevelops — security · code · ai",
+    description: "security · code · ai — privacy-first software, projects and writing by juliandevelops.",
     url: "https://juliandevelops.com",
-    siteName: "Julian Schumacher",
+    siteName: "juliandevelops",
     images: [],
     locale: "en_US",
     type: "website",
@@ -106,7 +99,7 @@ export default function RootLayout({
   return (
     <html
         lang="en"
-        className={`${sourceSerif4.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}
+        className={`${ibmPlexSans.variable} ${jetbrainsMono.variable}`}
       >
       <body>
         <Header />

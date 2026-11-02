@@ -5,14 +5,14 @@ import PageSection from "@/components/PageSection";
 import Stack from "@/components/Stack";
 
 export const metadata = {
-    title: 'Julian Schumacher - Contact',
-    description: 'Get in touch with Julian Schumacher',
+    title: 'juliandevelops - Contact',
+    description: 'Get in touch with juliandevelops',
     keywords: [
         "Developer Contact",
         "Programming Contact",
         "Contact",
         "Personal Contact",
-        "Julian Schumacher Contact",
+        "juliandevelops Contact",
         "Contact",
         "Get in Touch",
         "Contact Developer",
@@ -100,6 +100,16 @@ export default function Contact() {
                 </p>
                 <p className={styles.socialLink}>
                     <Image
+                        src="/socials/tiktok_icon.png"
+                        alt="TikTok Icon"
+                        width={20}
+                        height={20}
+                    />
+                    TikTok:
+                    <Link href="https://tiktok.com/@juliandevelops" target="_blank">@juliandevelops</Link>
+                </p>
+                <p className={styles.socialLink}>
+                    <Image
                         src="/socials/linkedin_icon.png"
                         alt="LinkedIn Icon"
                         height={20}
@@ -133,9 +143,11 @@ export default function Contact() {
                         <Link href="https://apps.apple.com/de/developer/julian-schumacher/id1681063160" target="_blank">
                             <Image
                                 src="/stores/app_store_icon.svg"
-                                alt="V3S Icon"
+                                alt="App Store"
                                 height={200}
                                 width={200}
+                                priority
+                                loading="eager"
                             />
                         </Link>
                     </p>
@@ -144,9 +156,11 @@ export default function Contact() {
                         <Link href="https://play.google.com/store/apps/developer?id=Julian+Schumacher" target="_blank">
                             <Image
                                 src="/stores/play_store_icon.svg"
-                                alt="V3S Icon"
+                                alt="Play Store"
                                 height={200}
                                 width={200}
+                                priority
+                                loading="eager"
                             />
                         </Link>
                     </p>

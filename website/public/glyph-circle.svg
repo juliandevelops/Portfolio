@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Kreis-Avatar (X, GitHub, LinkedIn): dunkler Kreis, komplettes Glyph (Eckmarken + J) auf 75 % um das Zentrum -->
+  <circle cx="60" cy="60" r="60" fill="#141414"/>
+  <g transform="translate(15,15) scale(0.75)" fill="none" stroke="#E6A23C" stroke-width="10" stroke-linecap="square">
+    <path d="M12 44 V12 H44"/>
+    <path d="M76 12 H108 V44"/>
+    <path d="M12 76 V108 H44"/>
+    <path d="M76 108 H108 V76"/>
+    <g transform="translate(7.5,20.5)">
+      <path d="M72 6 V52 A16 16 0 0 1 56 68 H46 A13 13 0 0 1 33 55 V48" stroke-linecap="butt"/>
+    </g>
+  </g>
+</svg>

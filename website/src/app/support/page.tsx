@@ -3,14 +3,14 @@ import PageSection from "@/components/PageSection";
 import Stack from "@/components/Stack";
 
 export const metadata = {
-    title: 'Julian Schumacher - Support',
+    title: 'juliandevelops - Support',
     description: 'Get support for my projects and more',
     keywords: [
         "Developer Support",
         "Programming Support",
         "Support",
         "Personal Support",
-        "Julian Schumacher Support",
+        "juliandevelops Support",
         "Support",
         "App Support",
         "Service Support",

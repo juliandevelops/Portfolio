@@ -3,10 +3,10 @@ import PageSection from "@/components/PageSection";
 import Stack from "@/components/Stack";
 
 export const metadata = {
-    title: 'Julian Schumacher - Imprint',
+    title: 'juliandevelops - Imprint',
     description: 'Imprint / legal notice pursuant to § 5 of the German Digital Services Act (DDG)',
     keywords: [
-        "Julian Schumacher Imprint",
+        "juliandevelops Imprint",
         "Imprint",
         "Legal Notice",
         "Legal",

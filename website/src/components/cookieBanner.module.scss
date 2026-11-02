@@ -53,13 +53,20 @@
 }
 
 .primaryButton {
-    color: var(--headline-color);
+    color: #141414;
     background: var(--accent-color);
     border: 1px solid var(--accent-color);
 
     &:hover {
-        background: #82343f;
-        border-color: #82343f;
+        background: var(--accent-hover);
+        border-color: var(--accent-hover);
+        color: #141414;
+    }
+
+    &:active {
+        background: var(--accent-pressed);
+        border-color: var(--accent-pressed);
+        color: #141414;
     }
 }
 

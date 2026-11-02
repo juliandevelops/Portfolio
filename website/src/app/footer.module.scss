@@ -1,32 +1,45 @@
 .footer {
-    width: min(820px, 92vw);
+    width: min(1080px, 94vw);
     margin: 0 auto;
     padding: 3rem 1.5rem 1.5rem;
     border-top: 1px solid var(--accent-border);
 }
 
-.brandDot {
-    color: var(--accent-color);
+.brandGlyph {
+    width: 1.5em;
+    height: 1.5em;
+    flex: none;
+}
+
+.footerBrand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
 }
 
 .footerInner {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 
     @media (min-width: 720px) {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        gap: 3rem;
     }
 }
 
 .footerTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.375em; /* 30/120 der Glyph-Höhe (Glyph = 1.5em) */
     margin: 0 0 0.4rem;
     color: var(--headline-color);
-    font-family: var(--font-heading), "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.01em;
+    font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-weight: 500; /* Medium unter 20 px */
+    letter-spacing: 0;
     font-size: 15px;
 }
 
@@ -38,8 +51,15 @@
 
 .footerLinks {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.6rem 1.2rem;
+    align-items: center;
+    gap: 0.6rem 1.4rem;
+
+    @media (min-width: 720px) {
+        justify-content: flex-end;
+        max-width: 62%;
+    }
 
     a,
     button {

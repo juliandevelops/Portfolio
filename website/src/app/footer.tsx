@@ -1,13 +1,18 @@
 import Link from "next/link";
 import styles from "./footer.module.scss";
 import CookieSettingsButton from "@/components/CookieSettingsButton";
+import Glyph from "@/components/Glyph";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInner}>
-        <div>
-          <p className={styles.footerTitle}>Julian Schumacher<span className={styles.brandDot}>.</span></p>
+        <div className={styles.footerBrand}>
+          <p className={styles.footerTitle}>
+            <Glyph className={styles.brandGlyph} variant="primary" />
+            <span>juliandevelops</span>
+          </p>
+          <p className={styles.footerCopy}>security · code · ai</p>
           <p className={styles.footerCopy}>© 2026 Julian Schumacher. All rights reserved.</p>
         </div>
         <div className={styles.footerLinks}>

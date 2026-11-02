@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./header.module.scss";
+import Glyph from "@/components/Glyph";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,8 +15,9 @@ export default function Header() {
   return (
     <nav className={styles.nav}>
       <div className={styles.navInner}>
-        <Link href="/" className={styles.navBrand}>
-          Julian Schumacher<span className={styles.brandDot}>.</span>
+        <Link href="/" className={styles.navBrand} aria-label="juliandevelops — home">
+          <Glyph className={styles.brandGlyph} variant="primary" />
+          <span>juliandevelops</span>
         </Link>
         <button
           className={styles.menuButton}
