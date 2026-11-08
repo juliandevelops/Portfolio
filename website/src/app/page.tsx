@@ -19,7 +19,7 @@ export default function Home() {
         <div className={styles.introduction}>
           <div className={styles.heroImage}>
             <Image
-              src="/me.jpg"
+              src="/me.png"
               alt="A Portrait of myself"
               width={140}
               height={140}
