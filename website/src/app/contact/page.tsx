@@ -51,11 +51,16 @@ export default function Contact() {
                 </p>
             </Stack>
 
-            {/* Email contact */}
-            <PageSection className={styles.contactSection}>
-                <h2>Preferred</h2>
-                <p>Email: <Link href="mailto:contact@julianschumacher.dev?subject=Contact request">contact@julianschumacher.dev</Link></p>
-            </PageSection>
+        {/* Email contact */}
+        <PageSection className={styles.contactSection}>
+          <h2>Preferred</h2>
+          <p>
+            Email:{" "}
+            <Link href="mailto:professional@juliandevelops.com?subject=Contact request">
+              professional@juliandevelops.com
+            </Link>
+          </p>
+        </PageSection>
 
             {/* Other Contacts */}
             <h2>Others</h2>
@@ -75,58 +80,91 @@ export default function Contact() {
                 </p>
             </PageSection>
 
-            {/* Social Links */}
-            <PageSection className={styles.contactSection}>
-                <h3>Socials</h3>
-                <p className={styles.socialLink}>
-                    <Image
-                        src="/socials/instagram_icon.svg"
-                        alt="Instagram Icon"
-                        width={20}
-                        height={20}
-                    />
-                    Instagram:
-                    <Link href="https://www.instagram.com/juliandevelops/" target="_blank">@juliandevelops</Link>
-                </p>
-                <p className={styles.socialLink}>
-                    <Image
-                        src="/socials/x_icon.svg"
-                        alt="X Icon"
-                        width={20}
-                        height={20}
-                    />
-                    (formerly Twitter):
-                    <Link href="https://twitter.com/julian_develops" target="_blank">@julian_develops</Link>
-                </p>
-                <p className={styles.socialLink}>
-                    <Image
-                        src="/socials/tiktok_icon.png"
-                        alt="TikTok Icon"
-                        width={20}
-                        height={20}
-                    />
-                    TikTok:
-                    <Link href="https://tiktok.com/@juliandevelops" target="_blank">@juliandevelops</Link>
-                </p>
-                <p className={styles.socialLink}>
-                    <Image
-                        src="/socials/linkedin_icon.png"
-                        alt="LinkedIn Icon"
-                        height={20}
-                        width={20}
-                    />
-                    LinkedIn:
-                    <Link href="https://www.linkedin.com/in/julian-schumacher-b6005021a/" target="_blank">Julian Schumacher</Link>
-                </p>
-                <p className={styles.socialLink}>
-                    <Image
-                        src="/socials/patreon_icon.svg"
-                        alt="Patreon Icon"
-                        height={20}
-                        width={20}
-                    />
-                    Patreon: <Link href="https://www.patreon.com/juliandevelops" target="_blank">@juliandevelops</Link></p>
-            </PageSection>
+        {/* Social Links */}
+        <PageSection className={styles.contactSection}>
+          <h3>Socials</h3>
+          <p className={styles.socialLink}>
+            <Image
+              src="/socials/instagram_icon.svg"
+              alt="Instagram Icon"
+              width={20}
+              height={20}
+            />
+            Instagram:
+            <Link
+              href="https://www.instagram.com/juliandevelops/"
+              target="_blank"
+            >
+              @juliandevelops
+            </Link>
+          </p>
+          <p className={styles.socialLink}>
+            <Image
+              src="/socials/x_icon.svg"
+              alt="X Icon"
+              width={20}
+              height={20}
+            />
+            (formerly Twitter):
+            <Link href="https://twitter.com/julian_develops" target="_blank">
+              @julian_develops
+            </Link>
+          </p>
+          <p className={styles.socialLink}>
+            <Image
+              src="/socials/tiktok_icon.png"
+              alt="TikTok Icon"
+              width={20}
+              height={20}
+            />
+            TikTok:
+            <Link href="https://tiktok.com/@juliandevelops" target="_blank">
+              @juliandevelops
+            </Link>
+          </p>
+          <p className={styles.socialLink}>
+            <Image
+              src="/socials/youtube_icon.png"
+              alt="Youtube Icon"
+              height={20}
+              width={20}
+            />
+            Youtube:
+            <Link
+              href="https://www.youtube.com/@juliandevelops"
+              target="_blank"
+            >
+              juliandevelops
+            </Link>
+          </p>
+          <p className={styles.socialLink}>
+            <Image
+              src="/socials/linkedin_icon.png"
+              alt="LinkedIn Icon"
+              height={20}
+              width={20}
+            />
+            LinkedIn:
+            <Link
+              href="https://www.linkedin.com/in/julian-schumacher-b6005021a/"
+              target="_blank"
+            >
+              Julian Schumacher
+            </Link>
+          </p>
+          <p className={styles.socialLink}>
+            <Image
+              src="/socials/patreon_icon.svg"
+              alt="Patreon Icon"
+              height={20}
+              width={20}
+            />
+            Patreon:{" "}
+            <Link href="https://www.patreon.com/juliandevelops" target="_blank">
+              @juliandevelops
+            </Link>
+          </p>
+        </PageSection>
 
             {/* Support section */}
             <PageSection className={styles.contactSection}>
