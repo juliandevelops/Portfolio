@@ -107,6 +107,18 @@ export default function Contact() {
                         Julian Schumacher
                     </Link>
                 </p>
+                <p className={styles.socialLink}>
+                    <Image
+                        src="/socials/keyoxide_icon.svg"
+                        alt="Keyoxide Icon"
+                        width={20}
+                        height={20}
+                    />
+                    Keyoxide (verifies my accounts):
+                    <Link href="https://keyoxide.org/aspe:keyoxide.org:EWZ2NFD5U4SBPC76FOFJSNGRWM" target="_blank">
+                        EWZ2NFD5U4SBPC76FOFJSNGRWM
+                    </Link>
+                </p>
             </PageSection>
 
             {/* Socials */}
