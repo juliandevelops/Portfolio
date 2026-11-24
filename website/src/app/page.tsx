@@ -31,7 +31,7 @@ export default function Home() {
               <Glyph className={styles.wordmarkGlyph} variant="primary" />
               juliandevelops
             </h1>
-            <p className={styles.heroTagline}>security · code · ai</p>
+            <p className={styles.heroTagline}>building secure software</p>
             <p className={styles.heroSubtitle}>
               I build privacy-first software and explore security topics with a clear, minimal focus.
             </p>

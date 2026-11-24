@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "juliandevelops — security · code · ai",
+  title: "juliandevelops — building secure software",
   description: "building secure software — privacy-first software, projects and writing by juliandevelops.",
   publisher: "Julian Schumacher",
   applicationName: "juliandevelops",
@@ -68,14 +68,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://juliandevelops.com"),
   twitter: {
     card: "summary_large_image",
-    title: "juliandevelops — security · code · ai",
-    description: "security · code · ai — privacy-first software, projects and writing by juliandevelops.",
+    title: "juliandevelops — building secure software",
+    description: "building secure software — privacy-first software, projects and writing by juliandevelops.",
     creator: "@juliandevelops",
     images: [],
   },
   openGraph: {
-    title: "juliandevelops — security · code · ai",
-    description: "security · code · ai — privacy-first software, projects and writing by juliandevelops.",
+    title: "juliandevelops — building secure software",
+    description: "building secure software — privacy-first software, projects and writing by juliandevelops.",
     url: "https://juliandevelops.com",
     siteName: "juliandevelops",
     images: [],
