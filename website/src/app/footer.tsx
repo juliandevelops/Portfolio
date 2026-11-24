@@ -12,7 +12,7 @@ export default function Footer() {
             <Glyph className={styles.brandGlyph} variant="primary" />
             <span>juliandevelops</span>
           </p>
-          <p className={styles.footerCopy}>security · code · ai</p>
+          <p className={styles.footerCopy}>building secure software</p>
           <p className={styles.footerCopy}>© 2026 Julian Schumacher. All rights reserved.</p>
         </div>
         <div className={styles.footerLinks}>

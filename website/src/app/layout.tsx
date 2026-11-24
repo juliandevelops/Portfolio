@@ -22,7 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "juliandevelops — security · code · ai",
-  description: "security · code · ai — privacy-first software, projects and writing by juliandevelops.",
+  description: "building secure software — privacy-first software, projects and writing by juliandevelops.",
   publisher: "Julian Schumacher",
   applicationName: "juliandevelops",
   generator: "Next.js",
