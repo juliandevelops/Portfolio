@@ -103,10 +103,58 @@ export default function Privacy() {
                     accordingly. For more information see the{" "}
                     <Link href="https://vercel.com/legal/privacy-policy" target="_blank">Vercel Privacy Policy</Link>.
                 </p>
+                <p>
+                    The DNS zone of this domain is operated by Cloudflare, Inc., but the A record for
+                    this website is set to &ldquo;DNS only&rdquo; and points directly to Vercel. Requests
+                    to the website therefore reach Vercel directly and do not pass through Cloudflare;
+                    only DNS resolution and the OpenPGP key subdomain run via Cloudflare (see section 4).
+                </p>
             </PageSection>
 
             <PageSection>
-                <h2>4. Cookies and local storage</h2>
+                <h2>4. Domain registration, DNS and OpenPGP key retrieval</h2>
+                <p>
+                    The domain juliandevelops.com is registered through{" "}
+                    <Link href="https://www.strato.de" target="_blank">STRATO GmbH</Link>{" "}
+                    (Otto-Ostrowski-Straße 7, 10249 Berlin, Germany). Strato acts only as domain
+                    registrar: it processes my registration data (name, address, contact details) to
+                    perform the registration and to meet registry requirements (Art. 6(1)(b) and (c)
+                    GDPR). When you visit this website, no connection to Strato is established and none
+                    of your data is transmitted to Strato.
+                </p>
+                <p>
+                    The DNS zone of the domain is operated by{" "}
+                    <Link href="https://www.cloudflare.com" target="_blank">Cloudflare, Inc.</Link>{" "}
+                    (101 Townsend St, San Francisco, CA 94107, USA). When you access the website, your
+                    DNS resolver sends the corresponding queries to Cloudflare&rsquo;s authoritative
+                    nameservers; this transmits the queried domain name and the IP address of your DNS
+                    resolver to Cloudflare. The purpose is reliable and secure name resolution; the
+                    legal basis is Art. 6(1)(f) GDPR (legitimate interest). The transfer to the USA is
+                    based on the EU-US Data Privacy Framework (Art. 45 GDPR); Cloudflare is certified
+                    accordingly. For more information see the{" "}
+                    <Link href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare Privacy Policy</Link>.
+                </p>
+                <p>
+                    The subdomain openpgp.juliandevelops.com serves my OpenPGP public key via the Web
+                    Key Directory (WKD) standard and is routed through a Cloudflare Worker. If your mail
+                    program or another WKD client retrieves the key from this subdomain, the request is
+                    processed by Cloudflare — this includes your IP address, the requested path, your
+                    user agent and the time — in order to execute the Worker and to protect the service
+                    against abuse. The Worker then retrieves the key server-side from Proton and returns
+                    it to your client, so Proton sees the request coming from Cloudflare&rsquo;s servers,
+                    not your IP address. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in a
+                    functioning and abuse-resistant key directory). Proton AG (Route de la Galaise 32,
+                    1228 Plan-les-Ouates, Geneva, Switzerland) provides the key; the transfer to
+                    Switzerland is based on the EU Commission&rsquo;s adequacy decision for Switzerland
+                    (Art. 45 GDPR). For more information see the{" "}
+                    <Link href="https://proton.me/legal/privacy" target="_blank">Proton Privacy Policy</Link>.
+                    Log data collected by Cloudflare in this context is used only to operate and secure
+                    the service and is deleted by Cloudflare after a short period.
+                </p>
+            </PageSection>
+
+            <PageSection>
+                <h2>5. Cookies and local storage</h2>
                 <p>
                     This website does not use cookies or comparable technologies for tracking or
                     advertising purposes. Only your consent decision (&ldquo;Accept all&rdquo; /
@@ -118,7 +166,7 @@ export default function Privacy() {
             </PageSection>
 
             <PageSection>
-                <h2>5. Vercel Speed Insights (only after consent)</h2>
+                <h2>6. Vercel Speed Insights (only after consent)</h2>
                 <p>
                     After your consent (&ldquo;Accept all&rdquo;) I use{" "}
                     <Link href="https://vercel.com/docs/speed-insights" target="_blank">Vercel Speed Insights</Link>{" "}
@@ -135,7 +183,7 @@ export default function Privacy() {
             </PageSection>
 
             <PageSection>
-                <h2>6. Embedded YouTube videos (only after consent)</h2>
+                <h2>7. Embedded YouTube videos (only after consent)</h2>
                 <p>
                     The home page may embed videos from YouTube, using the privacy-enhanced mode
                     (&ldquo;youtube-nocookie.com&rdquo;). A connection to YouTube is only established
@@ -150,7 +198,7 @@ export default function Privacy() {
             </PageSection>
 
             <PageSection>
-                <h2>7. Fonts</h2>
+                <h2>8. Fonts</h2>
                 <p>
                     The fonts used (IBM Plex Sans, JetBrains Mono) are provided via
                     Google Fonts but are downloaded at build time and served locally by this website.
@@ -159,18 +207,20 @@ export default function Privacy() {
             </PageSection>
 
             <PageSection>
-                <h2>8. Contacting me</h2>
+                <h2>9. Contacting me</h2>
                 <p>
                     If you contact me by email, the data you provide (name, email address, content of
                     the message) is processed exclusively to handle your request. The legal basis is
                     Art. 6(1)(b) GDPR (pre-contractual measures) or (f) (legitimate interest in
                     answering inquiries). The data is deleted once it is no longer required for the
-                    purpose and no statutory retention obligations apply.
+                    purpose and no statutory retention obligations apply. If your mail program retrieves
+                    my OpenPGP key via the Web Key Directory (openpgp.juliandevelops.com) when you write
+                    to me, the processing described in section 4 applies.
                 </p>
             </PageSection>
 
             <PageSection>
-                <h2>9. Storage duration</h2>
+                <h2>10. Storage duration</h2>
                 <p>
                     Personal data is stored only as long as necessary for the respective purpose or as
                     required by statutory retention periods. The host&rsquo;s server log files are deleted
@@ -180,7 +230,7 @@ export default function Privacy() {
             </PageSection>
 
             <PageSection>
-                <h2>10. Your rights as a data subject</h2>
+                <h2>11. Your rights as a data subject</h2>
                 <p>You have the following rights vis-à-vis me:</p>
                 <ul>
                     <li>Access to your processed data (Art. 15 GDPR)</li>
@@ -206,7 +256,7 @@ export default function Privacy() {
             </PageSection>
 
             <PageSection>
-                <h2>11. Right to object (Art. 21 GDPR)</h2>
+                <h2>12. Right to object (Art. 21 GDPR)</h2>
                 <p>
                     Where processing is based on Art. 6(1)(f) GDPR (legitimate interest), you have the
                     right to object at any time, on grounds relating to your particular situation, to the
@@ -217,7 +267,7 @@ export default function Privacy() {
             </PageSection>
 
             <PageSection>
-                <h2>12. Withdrawal of consent</h2>
+                <h2>13. Withdrawal of consent</h2>
                 <p>
                     Consents you have given (e.g. for Speed Insights or YouTube videos) can be withdrawn
                     at any time with effect for the future by clicking &ldquo;Cookie settings&rdquo; in the
@@ -227,7 +277,7 @@ export default function Privacy() {
             </PageSection>
 
             <PageSection>
-                <h2>13. Automated decision-making</h2>
+                <h2>14. Automated decision-making</h2>
                 <p>
                     No automated decision-making including profiling pursuant to Art. 22 GDPR takes
                     place.
@@ -235,7 +285,7 @@ export default function Privacy() {
             </PageSection>
 
             <PageSection>
-                <h2>14. Apps</h2>
+                <h2>15. Apps</h2>
                 <h3>General</h3>
                 <p>
                     My apps currently do not send any data to the internet and do not retrieve any
@@ -264,7 +314,7 @@ export default function Privacy() {
             </PageSection>
 
             <PageSection>
-                <h2>15. Changes to this privacy policy</h2>
+                <h2>16. Changes to this privacy policy</h2>
                 <p>
                     I reserve the right to adapt this privacy policy so that it always complies with
                     current legal requirements. The version available on this website at any given
